@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# EF Core migrations SQLite database
+backend/MiniFlightPlan.API/miniflightplan.db
+
+# Xcode
+ios/**/*.xcodeproj/
+ios/**/*.xcworkspace/
+ios/**/DerivedData/
+ios/**/*.xcuserstate
+ios/**/.swiftpm/
+
+# NuGet
+*.nupkg
+packages/
