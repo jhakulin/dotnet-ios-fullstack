@@ -1,7 +1,7 @@
-# MiniFlightPlan — Learning Project
+# dotnet-ios-fullstack
 
-A mini FltPlan-style flight planning service built to learn .NET Core backend and iOS app
-development — covering the key patterns for scalable, well-structured service architecture.
+A full-stack learning project with a .NET Core backend and SwiftUI iOS frontend.
+Uses a flight planning domain to cover the key patterns for scalable, well-structured service architecture.
 
 ---
 
@@ -111,7 +111,10 @@ cd backend/MiniFlightPlan.API
 # Restore NuGet packages
 dotnet restore
 
-# Create the SQLite database from migrations (creates miniflightplan.db)
+# Create the initial migration (generates the schema from your models — only needed once)
+dotnet ef migrations add InitialCreate
+
+# Apply the migration to create the SQLite database (creates miniflightplan.db)
 dotnet ef database update
 
 # Run the API (starts on http://localhost:5000)
