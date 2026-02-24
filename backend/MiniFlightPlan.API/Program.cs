@@ -103,3 +103,6 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+// Required for WebApplicationFactory in integration tests to access this assembly's Program class
+public partial class Program { }

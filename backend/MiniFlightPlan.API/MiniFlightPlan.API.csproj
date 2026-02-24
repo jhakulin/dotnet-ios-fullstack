@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Generates XML docs for Swagger to pick up -->
@@ -10,13 +10,12 @@
 
   <ItemGroup>
     <!-- EF Core with SQLite — SQLite is perfect for local dev on Mac, no SQL Server needed -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.0" />
     <!-- EF Core tools for running migrations from the CLI -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.0" />
     <!-- Swagger UI — auto-generates interactive API docs at /swagger -->
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <!-- In-memory caching support -->
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    <!-- In-memory caching is included in the .NET framework — no extra package needed -->
   </ItemGroup>
 
 </Project>
